@@ -32,24 +32,25 @@ architecture testbench of adder_tb is
     );
     stim : process
     begin
-      A<="0000";
-      B<="1010";
+      A<="000000";
+      B<="001010";
       wait for 10 ns;
 
       --y<="0000";
-      A<="0101";
-      B<="1010";
+      A<="000101";
+      B<="001010";
       wait for 10 ns;
 
       --y<="0000";
-      A<="0101";
-      B<="0101";
+      A<="000101";
+      B<="000101";
       wait for 10 ns;
 
       --y<="0000";
-      A<="0111";
-      B<="1110";
+      A<="000111";
+      B<="001110";
       wait for 10 ns;
+      
       wait;
     end process;
   end testbench;
